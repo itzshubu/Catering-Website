@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Billa Caterer Menu: Indulge in Culinary Delights for Every Occasion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:992px)" href="mobile.css">
+    <style>
+        .custom-shape-divider-top-1704647500 .shape-fill {
+            fill: #005773;
+        }
+
+        .food-menu {
+            position: relative;
+        }
+
+        .food-menu p {
+            padding: 0;
+            margin: 0;
+        }
+        .foodmenustart{
+        padding: 10px 0px ;
+        margin: 0px;
+        font-weight: bold;
+       }
+        .items-main-div {
+            padding: 20px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        .main-div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            color: white;
+            width: 80%;
+        }
+
+        .indiv {
+            border: 2px solid #005773;
+            background-color: #005773;
+            width: 90%;
+            padding: 5px;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .checkbox-div {
+            display: none;
+        }
+
+        input[type="radio"]:checked~.checkbox-div {
+            display: block;
+        }
+
+        .left-div {
+            width: 50%;
+            display: flex;
+            justify-content: end;
+
+        }
+
+        .right-div {
+            width: 50%;
+            display: flex;
+            justify-content: start;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .third-img {
+                width: 120px;
+            }
+
+            .jio {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .frame-jio {
+                width: 100%;
+            }
+            .main-div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container text-white">
+            <a class="navbar-brand text-white" href="#">Billa.caterers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About-us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="food-Menu.html">Food-Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="contect.html">contect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- starting of food menu section -->
+    <section class="bg-color b-black text-white food-menu">
+        <div class="custom-shape-divider-top-1704647500">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container text-center common-title fw-bold my-3 my-lg-3">
+            <h2>Food Menu</h2>
+            <hr class=" my-3 mx-auto">
+        </div>
+        <div class="container pb-2 d-large-none ">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-evenly">
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4 card-box2 rounded-2 shadow ">
+                                <div class="text-center ">
+                                    <img src="./food menu images/juse.jpg" alt="link" class="" width="170px">
+                                    <h5 class="my-3">Juice And Mocktails</h5>
+                                    <p>Sip into freshness with our vibrant range of juices and mocktails, a burst
+                                        of flavors in every glass. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row  justify-content-evenly">
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4 card-box2 rounded-2 shadow">
+                                <div class="text-center ">
+                                    <img src="./food menu images/photo22indiansweet.jpg" alt="link" class=""
+                                        width="170px">
+                                    <h5 class="my-3">Indian Sweets</h5>
+                                    <p>Indulge in the rich tradition of Indian sweets, where every bite is a
+                                        celebration of sweetness and culture.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-evenly">
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4  card-box2  rounded-2 shadow">
+                                <div class="text-center">
+                                    <img src="./food menu images/indian dishes.jpg" alt="link" class="" width="170px">
+                                    <h5 class="my-3">Indian Dishes</h5>
+                                    <p>Embark on a flavorful journey through the diverse landscapes of India with
+                                        our authentic and savory Indian dishes.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-evenly">
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4  card-box2 rounded-2 shadow">
+                                <div class="text-center ">
+                                    <img src="./food menu images/fastfoodindian.jpg" alt="link" class="" width="170px">
+                                    <h5 class="my-3">Fast Food</h5>
+                                    <p>Quick bites, delightful treats – our fast food options are designed for
+                                        those on the go without compromising on taste</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-evenly">
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4  card-box2 rounded-2 shadow ">
+                                <div class="text-center ">
+                                    <img src="./food menu images/desert.jpeg" alt="link" class="" width="170px">
+                                    <h5 class="my-3">Dessert type</h5>
+                                    <p>Satisfy your sweet cravings with our diverse desserts, from classic
+                                        favorites to innovative delights</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-evenly">
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4  card-box2 rounded-2 shadow">
+                                <div class="text-center">
+                                    <img src="./food menu images/live counter.webp" alt="link" class="g" width="170px">
+                                    <h5 class="my-3">Live Counters</h5>
+                                    <p>Experience the excitement of live culinary artistry at our live counter,
+                                        where your dishes are prepared right before your eyes.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our menu section  second part-->
+    <section class="bg-color b-black text-white food-menu none">
+        <div class="container pb-2 ">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button> -->
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row pb-4 pb-lg-4 justify-content-evenly">
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4 card-box2 rounded-2 shadow ">
+                                <div class="text-center ">
+                                    <img src="./food menu images/juse.jpg" alt="link" class="" width="170px">
+                                    <h5 class="my-3">Juice And Mocktails</h5>
+                                    <p>Sip into freshness with our vibrant range of juices and mocktails, a burst
+                                        of flavors in every glass. </p>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4 card-box2 rounded-2 shadow">
+                                <div class="text-center ">
+                                    <img src="./food menu images/photo22indiansweet.jpg" alt="link" class=""
+                                        width="170px">
+                                    <h5 class="my-3">Indian Sweets</h5>
+                                    <p>Indulge in the rich tradition of Indian sweets, where every bite is a
+                                        celebration of sweetness and culture.</p>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4  card-box2  rounded-2 shadow">
+                                <div class="text-center">
+                                    <img src="./food menu images/indian dishes.jpg" alt="link" class="" width="170px">
+                                    <h5 class="my-3">Indian Dishes</h5>
+                                    <p>Embark on a flavorful journey through the diverse landscapes of India with
+                                        our authentic and savory Indian dishes.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row pb-4 pb-lg-4 justify-content-evenly">
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4  card-box2 rounded-2 shadow">
+                                <div class="text-center ">
+                                    <img src="./food menu images/fastfoodindian.jpg" alt="link" class="" width="170px">
+                                    <h5 class="my-3">Fast Food</h5>
+                                    <p>Quick bites, delightful treats – our fast food options are designed for
+                                        those on the go without compromising on taste</p>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4  card-box2 rounded-2 shadow ">
+                                <div class="text-center ">
+                                    <img src="./food menu images/desert.jpeg" alt="link" class="" width="170px">
+                                    <h5 class="my-3">Dessert type</h5>
+                                    <p mb-2>Satisfy your sweet cravings with our diverse desserts, from classic
+                                        favorites to innovative delights</p>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-3 m-3 py-4  card-box2 rounded-2 shadow">
+                                <div class="text-center">
+                                    <img src="./food menu images/live counter.webp" alt="link" class="g" width="170px">
+                                    <h5 class="my-3">Live Counters</h5>
+                                    <p>Experience the excitement of live culinary artistry at our live counter,
+                                        where your dishes are prepared right before your eyes.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    </section>
+    <!--End of food Menu section -->
+    <h1 class="text-center foodmenustart" id="#foodmenustart">List of Food Items</h1>
+    <form action="" class="text-center">
+        <div class="items-main-div text-start">
+            <div class="left-div">
+                <div class=" d-flex main-div">
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="juice" />
+                        <label for="juice">Juices</label>
+                        <div class="checkbox-div">
+                            <div>
+                                <input type="checkbox" name="cycle" id="cycle" value="cycle">
+                                <label for="cycle">cycle</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="car" id="car" value="car">
+                                <label for="car">car</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="ricshow" id="cycle" value="ricshow">
+                                <label for="cycle">ricshow</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="mocktail" />
+                        <label for="mocktail">Mocktail</label>
+                        <div class="checkbox-div">
+                            <div>
+                                <input type="checkbox" name="cycle" id="cycle" value="cycle">
+                                <label for="cycle">cycle</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="car" id="car" value="car">
+                                <label for="car">car</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="ricshow" id="cycle" value="ricshow">
+                                <label for="cycle">ricshow</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="bitings" />
+                        <label for="bitings">Bitings</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="sweet-bite" />
+                        <label for="sweet-bite">Sweet Bite</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="baklawa" />
+                        <label for="baklawa">Baklawa</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="soup" />
+                        <label for="soup">Soup</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="international-breads" />
+                        <label for="international-breads">International Breads</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="cheese-bar" />
+                        <label for="cheese-bar">Cheese Bar</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="sweets" />
+                        <label for="sweets">Sweets</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="vegetables" />
+                        <label for="vegetables">Vegetables</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="indian-breads" />
+                        <label for="indian-breads">Indian Breads</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="farsan" />
+                        <label for="farsan">Farsan</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="dal-rice" />
+                        <label for="dal-rice">Dal Rice</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="salad" />
+                        <label for="salad">Salad</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="chaat" />
+                        <label for="chaat">Chaat</label>
+                    </div>
+                    <!-- ... (Previous items) -->
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="italian-gourmet" />
+                        <label for="italian-gourmet">Italian Gourmet</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="international" />
+                        <label for="international">International</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="latin-american" />
+                        <label for="latin-american">Latin American</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="israel" />
+                        <label for="israel">Israel</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="gourmet" />
+                        <label for="gourmet">Gourmet</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="thai" />
+                        <label for="thai">Thai</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="swiss" />
+                        <label for="swiss">Swiss</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="turkey" />
+                        <label for="turkey">Turkey</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="modern-turkish" />
+                        <label for="modern-turkish">Modern Turkish</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="asian" />
+                        <label for="asian">Asian</label>
+                    </div>
+                    <!-- ... (Previous items) -->
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="sizzler" />
+                        <label for="sizzler">Sizzler</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="fusion" />
+                        <label for="fusion">Fusion</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="cyprus" />
+                        <label for="cyprus">Cyprus</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="new-york" />
+                        <label for="new-york">New York</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="mediterranean" />
+                        <label for="mediterranean">Mediterranean</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="lebanese" />
+                        <label for="lebanese">Lebanese</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="greek" />
+                        <label for="greek">Greek</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="hot-dog" />
+                        <label for="hot-dog">Hot Dog</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="molecular" />
+                        <label for="molecular">Molecular</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="wood-fire" />
+                        <label for="wood-fire">Wood Fire</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="ethiopian" />
+                        <label for="ethiopian">Ethiopian</label>
+                    </div>
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="macarons" />
+                        <label for="macarons">Macarons</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="kadai-milk" />
+                        <label for="kadai-milk">KADAI MILK</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="right-div">
+
+                <div class="d-flex main-div">
+                    <!-- Continue adding more items in a similar manner -->
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="avocado-bar" />
+                        <label for="avocado-bar">Avocado Bar</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="south-indian" />
+                        <label for="south-indian">South Indian</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="chilla-wrap" />
+                        <label for="chilla-wrap">Chilla & Wrap</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="pizza" />
+                        <label for="pizza">Pizza</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="just-baked" />
+                        <label for="just-baked">Just Baked</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="bread-pizza-sandwich" />
+                        <label for="bread-pizza-sandwich">Bread Pizza Sandwich</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="barbeque" />
+                        <label for="barbeque">Barbeque</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="oriental" />
+                        <label for="oriental">Oriental</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="hawaiian" />
+                        <label for="hawaiian">Hawaiian</label>
+                    </div>
+                    <!-- ... (Previous items) -->
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="morrocan" />
+                        <label for="morrocan">Morrocan</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="japanese" />
+                        <label for="japanese">Japanese</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="pan-asian" />
+                        <label for="pan-asian">Pan Asian</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="albanian" />
+                        <label for="albanian">Albanian</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="persian" />
+                        <label for="persian">Persian</label>
+                    </div>
+                    <!-- ... (Previous items) -->
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="gyoza" />
+                        <label for="gyoza">Gyoza</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="combodian" />
+                        <label for="combodian">Combodian</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="malaysian" />
+                        <label for="malaysian">Malaysian</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="vietnamese" />
+                        <label for="vietnamese">Vietnamese</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="caribbean" />
+                        <label for="caribbean">Caribbean</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="korean" />
+                        <label for="korean">Korean</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="teppanyaki" />
+                        <label for="teppanyaki">Teppanyaki</label>
+                    </div>
+
+                    <!-- ... (Previous items) -->
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="maharashtrian" />
+                        <label for="maharashtrian">Maharashtrian</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="mexican" />
+                        <label for="mexican">Mexican</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="kathiyawadi" />
+                        <label for="kathiyawadi">Kathiyawadi</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="fusion-kathiyawadi-chaat" />
+                        <label for="fusion-kathiyawadi-chaat">Fusion Kathiyawadi Chaat</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="indori-chaat" />
+                        <label for="indori-chaat">Indori Chaat</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="sandwich" />
+                        <label for="sandwich">Sandwich</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="shashlik-rolls" />
+                        <label for="shashlik-rolls">Shashlik Rolls</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="italian" />
+                        <label for="italian">Italian</label>
+                    </div>
+                    <!-- ... (Previous items) -->
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="pop-up" />
+                        <label for="pop-up">POP UP</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="london-street" />
+                        <label for="london-street">London Street</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="ice-creams" />
+                        <label for="ice-creams">Ice Creams</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="desserts" />
+                        <label for="desserts">Desserts</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="plated-desserts" />
+                        <label for="plated-desserts">Plated Desserts</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="cake-and-pastries" />
+                        <label for="cake-and-pastries">Cake And Pastries</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="waffles" />
+                        <label for="waffles">WAFFLES</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="fruits" />
+                        <label for="fruits">Fruits</label>
+                    </div>
+
+                    <div class="indiv">
+                        <input type="radio" name="accordion" id="cookies" />
+                        <label for="cookies">Cookies</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary">submit</button>
+    </form>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class=" mt-3">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4 text-white" style="background-color:  #005773">
+                <!-- Left -->
+                <div class="me-5">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="https://www.facebook.com/profile.php?id=100050352532725&mibextid=ZbWKwL" target="_blank"
+                        class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=+919815947385" target="_blank" class="text-white me-4">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/its.dinesh.07/?igsh=MzRlODBiNWFlZA%3D%3D" target="_blank"
+                        class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@Dishu5911" target="_blank" class="text-white me-4">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/">DineshAndcompany.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

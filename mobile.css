@@ -1,0 +1,85 @@
+
+h1 {
+    font-size: 2.3em;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.9em;
+}
+/* -------navbar css------------ */
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.705);
+    color: rgb(0, 0, 0);
+}
+
+
+/* main section after navbar css */
+.div-main {
+    height: auto;
+    padding-bottom: 110px;
+}
+
+
+
+
+/* wedding catering section css */
+.div-third {
+    height: auto;
+    display: flex;
+}
+
+
+
+/* our food Menu section */
+/* first part */
+.d-large-none{
+  display: block;
+}
+/* second part */
+  .carousel-control-next {
+    right: 0;
+}
+.carousel-control-prev {
+    left: 0;
+}
+.none{
+    display: none;
+}
+
+
+
+
+
+/* contect us section */
+.secdiv{
+    flex-wrap: wrap;
+}
+.secdiv-indiv {
+    margin: 0px 0px;
+}
+.secdiv-indiv input{
+    margin: 10px 0px 0px 10px;
+    height: 35px;
+    width: 70vw;
+    font-size: large;
+    padding: 10px;
+}
+
+#number{
+    display: inline;
+    padding:5px ;
+    margin: 10px 0px 0px 10px;
+    height: 35px;
+    width: 70vw;
+    font-size: large;
+}
+#text{
+    display: inline;
+    padding:5px ;
+    margin: 10px 0px 0px 10px;
+    height: 55px;
+    width: 70vw;
+    font-size: large;
+}
+

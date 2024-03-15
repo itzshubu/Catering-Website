@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Boxes</title>
+   
+    <style>
+        body{
+            background-color: black;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .main-div {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            color: white;
+           width: 80%;
+        }
+
+        .indiv {
+            border: 2px solid #005773;
+            background-color: #005773;
+            width: 90%;
+            padding: 5px;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .checkbox-div {
+            display: none;
+        }
+
+        input[type="radio"]:checked~.checkbox-div {
+            display: block;
+        }
+
+        .left-div {
+            width: 50%;
+            float: left;
+            display: flex;
+            justify-content: end;
+        }
+
+        .right-div {
+            width: 50%;
+            float: right;
+            display: flex;
+            justify-content: start;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">List of Food Items</h1>
+    <form action="">
+        <div class="left-div">
+
+            <div class="container d-flex main-div">
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="juice" />
+                    <label for="juice">Juices</label>
+                    <div class="checkbox-div">
+                        <div>
+                            <input type="checkbox" name="cycle" id="cycle" value="cycle">
+                            <label for="cycle">cycle</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="car" id="car" value="car">
+                            <label for="car">car</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ricshow" id="cycle" value="ricshow">
+                            <label for="cycle">ricshow</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="mocktail" />
+                    <label for="mocktail">Mocktail</label>
+                    <div class="checkbox-div">
+                        <div>
+                            <input type="checkbox" name="cycle" id="cycle" value="cycle">
+                            <label for="cycle">cycle</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="car" id="car" value="car">
+                            <label for="car">car</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ricshow" id="cycle" value="ricshow">
+                            <label for="cycle">ricshow</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="bitings" />
+                    <label for="bitings">Bitings</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="sweet-bite" />
+                    <label for="sweet-bite">Sweet Bite</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="baklawa" />
+                    <label for="baklawa">Baklawa</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="soup" />
+                    <label for="soup">Soup</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="international-breads" />
+                    <label for="international-breads">International Breads</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="cheese-bar" />
+                    <label for="cheese-bar">Cheese Bar</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="sweets" />
+                    <label for="sweets">Sweets</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="vegetables" />
+                    <label for="vegetables">Vegetables</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="indian-breads" />
+                    <label for="indian-breads">Indian Breads</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="farsan" />
+                    <label for="farsan">Farsan</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="dal-rice" />
+                    <label for="dal-rice">Dal Rice</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="salad" />
+                    <label for="salad">Salad</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="chaat" />
+                    <label for="chaat">Chaat</label>
+                </div>
+                <!-- ... (Previous items) -->
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="italian-gourmet" />
+                    <label for="italian-gourmet">Italian Gourmet</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="international" />
+                    <label for="international">International</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="latin-american" />
+                    <label for="latin-american">Latin American</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="israel" />
+                    <label for="israel">Israel</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="gourmet" />
+                    <label for="gourmet">Gourmet</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="thai" />
+                    <label for="thai">Thai</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="swiss" />
+                    <label for="swiss">Swiss</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="turkey" />
+                    <label for="turkey">Turkey</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="modern-turkish" />
+                    <label for="modern-turkish">Modern Turkish</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="asian" />
+                    <label for="asian">Asian</label>
+                </div>
+                <!-- ... (Previous items) -->
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="sizzler" />
+                    <label for="sizzler">Sizzler</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="fusion" />
+                    <label for="fusion">Fusion</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="cyprus" />
+                    <label for="cyprus">Cyprus</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="new-york" />
+                    <label for="new-york">New York</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="mediterranean" />
+                    <label for="mediterranean">Mediterranean</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="lebanese" />
+                    <label for="lebanese">Lebanese</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="greek" />
+                    <label for="greek">Greek</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="hot-dog" />
+                    <label for="hot-dog">Hot Dog</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="molecular" />
+                    <label for="molecular">Molecular</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="wood-fire" />
+                    <label for="wood-fire">Wood Fire</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="ethiopian" />
+                    <label for="ethiopian">Ethiopian</label>
+                </div>
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="macarons" />
+                    <label for="macarons">Macarons</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="kadai-milk" />
+                    <label for="kadai-milk">KADAI MILK</label>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="right-div">
+
+            <div class="container d-flex main-div">
+                <!-- Continue adding more items in a similar manner -->
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="avocado-bar" />
+                    <label for="avocado-bar">Avocado Bar</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="south-indian" />
+                    <label for="south-indian">South Indian</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="chilla-wrap" />
+                    <label for="chilla-wrap">Chilla & Wrap</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="pizza" />
+                    <label for="pizza">Pizza</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="just-baked" />
+                    <label for="just-baked">Just Baked</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="bread-pizza-sandwich" />
+                    <label for="bread-pizza-sandwich">Bread Pizza Sandwich</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="barbeque" />
+                    <label for="barbeque">Barbeque</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="oriental" />
+                    <label for="oriental">Oriental</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="hawaiian" />
+                    <label for="hawaiian">Hawaiian</label>
+                </div>
+                <!-- ... (Previous items) -->
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="morrocan" />
+                    <label for="morrocan">Morrocan</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="japanese" />
+                    <label for="japanese">Japanese</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="pan-asian" />
+                    <label for="pan-asian">Pan Asian</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="albanian" />
+                    <label for="albanian">Albanian</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="persian" />
+                    <label for="persian">Persian</label>
+                </div>
+                <!-- ... (Previous items) -->
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="gyoza" />
+                    <label for="gyoza">Gyoza</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="combodian" />
+                    <label for="combodian">Combodian</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="malaysian" />
+                    <label for="malaysian">Malaysian</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="vietnamese" />
+                    <label for="vietnamese">Vietnamese</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="caribbean" />
+                    <label for="caribbean">Caribbean</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="korean" />
+                    <label for="korean">Korean</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="teppanyaki" />
+                    <label for="teppanyaki">Teppanyaki</label>
+                </div>
+
+                <!-- ... (Previous items) -->
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="maharashtrian" />
+                    <label for="maharashtrian">Maharashtrian</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="mexican" />
+                    <label for="mexican">Mexican</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="kathiyawadi" />
+                    <label for="kathiyawadi">Kathiyawadi</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="fusion-kathiyawadi-chaat" />
+                    <label for="fusion-kathiyawadi-chaat">Fusion Kathiyawadi Chaat</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="indori-chaat" />
+                    <label for="indori-chaat">Indori Chaat</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="sandwich" />
+                    <label for="sandwich">Sandwich</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="shashlik-rolls" />
+                    <label for="shashlik-rolls">Shashlik Rolls</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="italian" />
+                    <label for="italian">Italian</label>
+                </div>
+                <!-- ... (Previous items) -->
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="pop-up" />
+                    <label for="pop-up">POP UP</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="london-street" />
+                    <label for="london-street">London Street</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="ice-creams" />
+                    <label for="ice-creams">Ice Creams</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="desserts" />
+                    <label for="desserts">Desserts</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="plated-desserts" />
+                    <label for="plated-desserts">Plated Desserts</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="cake-and-pastries" />
+                    <label for="cake-and-pastries">Cake And Pastries</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="waffles" />
+                    <label for="waffles">WAFFLES</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="fruits" />
+                    <label for="fruits">Fruits</label>
+                </div>
+
+                <div class="indiv">
+                    <input type="radio" name="accordion" id="cookies" />
+                    <label for="cookies">Cookies</label>
+                </div>
+
+         
+            </div>
+        </div>
+    </form>
+    <script>
+       
+    </script>
+</body>
+
+</html>
+
+<!-- Mark Your Delicacies
+Juice
+Mocktail
+Bitings
+Sweet Bite
+Baklawa
+Soup
+International Breads
+Cheese Bar
+Sweets
+Vegetables
+Indian Breads
+Farsan
+Dal Rice
+Salad
+Chaat
+Avocado Bar
+South Indian
+Chilla & Wrap
+Pizza
+Just Baked
+Bread Pizza Sandwich
+Barbeque
+Oriental
+Hawaiian
+Morrocan
+Japanese
+Pan Asian
+Albanian
+Persian
+Gyoza
+Combodian
+Malaysian
+Vietnamese
+Caribean
+Korean
+Teppanyaki
+Maharashtrian
+Mexican
+Kathiyawadi
+Fusion Kathiyawadi Chaat
+Indori Chaat
+Sandwich
+Shashlik Rolls
+Italian
+Italian Gourmet
+International
+Latin American
+Israel
+Gurmet
+Thai
+Swiss
+Turkey
+Modern Turkish
+Asian
+Sizzler
+Fusion
+Cyprus
+New York
+Mediterranean
+Lebanese
+Greek
+Hot Dog
+Molecular
+Wood Fire
+Ethiopian
+POP UP
+London Street
+Ice Creams
+Desserts
+Plated Desserts
+Cake And Pastries
+WAFFLES
+Fruits
+Cookies
+Macarons
+KADAI MILK -->

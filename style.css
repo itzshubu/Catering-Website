@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+}
+
+
+
+/*----------- navbar css ---------------*/
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+   background-color: #005773;
+}
+
+.bg-color {
+    background-color:rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.nav-link {
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    color: rgb(160, 211, 255);
+    font-weight: bolder;
+}
+.actives{
+    color: rgb(160, 211, 255);
+
+}
+/*-----------end of  navbar css ---------------*/
+
+
+
+
+/*-------------- main section after navbar ---------------*/
+.bg-main {
+    position: relative;
+    color: white;
+}
+
+.div-main {
+    height: 90vh;
+    display: flex;
+}
+
+.img1 {
+    border: 1px solid #005773;
+    margin: auto;
+    width: 80%;
+   border-radius: 10px;
+   aspect-ratio: 3/2;
+   /* object-fit: contain; */
+
+}
+
+/*--- shape divider css---*/
+.custom-shape-divider-bottom-1704453952 {
+    position: absolute;
+    bottom: -0.7px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1704453952 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1704453952 .shape-fill {
+    fill: #ffffff;
+}
+/*---end of  shape divider css---*/
+/* ---------end of main section------------- */
+
+
+/* ------------------services section css-------------------- */
+.service-section .third-img{
+    border-radius: 5px; 
+    transition: all linear 0.1s;
+   
+}
+.service-section .third-img:hover{ 
+   box-shadow: 15px 15px 20px grey;
+   scale: 1.1;
+}
+.card-box{
+    transition: all linear .2s;
+    background-color: rgb(244, 244, 244);
+}
+.card-box:hover {
+    background-color: rgb(237, 237, 237);
+}
+hr{
+    width: 33%;
+}
+/* ------------------end of services section css-------------------- */
+
+
+
+/*--------------------------------- Wedding catering section------------------------------------- */
+.div-third {
+    height: auto;
+    display: flex;
+}
+.bg-img{
+    height: auto;
+    overflow: hidden;
+}
+.bg-img::before {
+    content: "";
+    background:linear-gradient(rgba(22, 22, 22, 0.9),rgba(22,22,22,0.9)),url('./bgcimages/catering1.jpg') center center/cover no-repeat fixed;
+    position: absolute;;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width: 100%;
+    z-index: -4;
+    opacity: 1;
+   
+}
+.img2 {
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+/* --------------why billa caters section----------------- */
+
+.billa-cater .third-img{
+    object-fit: contain;
+    mix-blend-mode:darken;
+}
+
+.billa-cater .shadow:hover{
+    scale: 1.1;
+}
+/*----------------- end of why billa section------------------- */
+
+
+ /*----------------------------- Food Menu section css----------------------------------  */
+ .food-menu p{
+    padding: 0;
+    margin: 0;
+}
+/* first part */
+.d-large-none{
+    display: none;
+  }
+  /* second part */
+
+.card-box2{
+    background-color: #1c1c1c;
+    transition: all linear 0.1s;
+   
+}
+.card-box2:hover{
+   
+    background-color: #333333;
+
+}
+.food-menu .shadow:hover{
+    scale: 1.1;
+}
+.carousel-control-next {
+    right: -63px;
+}
+.carousel-control-prev {
+    left: -63px;
+}
+/* .b-black{
+    border: 1px solid black;
+} */
+ /*-----------------------------end of  Food Menu section css ----------------------------------  */
+
+
+
+
+
+/* --------------------------------our client says section -------------------------*/
+
+.client-section {
+    position: relative;
+}
+
+.custom-shape-divider-top-1704647500 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.custom-shape-divider-top-1704647500 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 48px;
+}
+
+.custom-shape-divider-top-1704647500 .shape-fill {
+    fill: #005773;
+}
+/* ----end of client says section */
+
+
+
+/*------------------------------ contect section -----------------------------------*/
+.contect{
+    position: relative;
+}
+.custom-shape-divider-top-1704647500 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.custom-shape-divider-top-1704647500 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 48px;
+}
+
+.custom-shape-divider-top-1704647500 .shape-fill {
+    fill:rgb(0, 0, 0);
+}
+
+
+.secdiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.secdiv-indiv {
+    margin: 20px 20px;
+}
+
+.secdiv-indiv>p,
+.secdiv-indiv>h2,
+.button2 {
+    margin: 10px 10px;
+}
+
+
+.secdiv-indiv input {
+    margin: 10px 0px 0px 10px;
+    height: 35px;
+    width: 200px;
+    font-size: large;
+    padding: 10px;
+}
+
+#number {
+    display: block;
+    padding: 5px;
+    margin: 10px 0px 0px 10px;
+    height: 35px;
+    width: 415px;
+    font-size: large;
+}
+
+#text {
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    height: 50px;
+    width: 415px;
+    font-size: large;
+}
+.frame-jio{
+    width: 100%;
+}
+/* ----------------------end of contect section--------------------------- */
+
+
+/* media query for less than 300 px screens */
+@media only screen and (max-width: 300px) {
+    .third-img{
+        width: 120px;
+    }
+    .jio{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+     .frame-jio{
+        width:100%;
+     }
+}
